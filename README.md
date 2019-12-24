@@ -17,7 +17,7 @@ import TimeSpan from "chat-timespan";
 
 const timeSpan = new TimeSpan();
 
-timeSpan.format(new Date("2019-12-01 08:08:08")) // 2019年12月01日 08:08
+timeSpan.format(new Date("2019-12-01 08:08:08").getTime()) // 2019年12月01日 08:08
 timeSpan.format(Date.now() - 1000 * 60 * 60 * 2) // 2 小时前
 timeSpan.format(Date.now() - 1000 * 60 * 5) // 5 分钟前
 timeSpan.format(Date.now() - (1000 * 60 * 5 + 1000)) // null
